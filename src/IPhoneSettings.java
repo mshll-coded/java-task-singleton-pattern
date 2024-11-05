@@ -1,13 +1,13 @@
 public class IPhoneSettings {
 
     private static IPhoneSettings instance;
-    
-    private boolean WiFi;
+
+    private boolean wifi;
     private double brightness;
     private int volume;
 
     private IPhoneSettings() {
-        WiFi = false;
+        wifi = false;
         brightness = 0.5;
         volume = 50;
     }
@@ -17,16 +17,16 @@ public class IPhoneSettings {
         return instance;
     }
 
-    public boolean isWiFi() {
-        return WiFi;
+    public boolean isWifi() {
+        return wifi;
     }
 
     public void enableWiFi() {
-        WiFi = true;
+        wifi = true;
     }
 
     public void disableWiFi() {
-        WiFi = false;
+        wifi = false;
     }
 
     public double getBrightness() {
@@ -52,7 +52,7 @@ public class IPhoneSettings {
     @Override
     public String toString() {
         return "IPhoneSettings{" +
-                "WiFi=" + WiFi +
+                "WiFi=" + wifi +
                 ", brightness=" + brightness +
                 ", volume=" + volume +
                 '}';
